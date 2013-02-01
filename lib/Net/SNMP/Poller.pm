@@ -12,11 +12,11 @@ Net::SNMP::Poller - Simple poller for non-blocking SNMP queries
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
@@ -53,10 +53,6 @@ queries then returns the results.
                            '.1.3.6.1.4.1.2021.11.50.0' => 414695
                          }
     };
-
-Note on testing: This module requires snmpd running on the target hosts.  I have
-included test_deeply.pl which runs queries against localhost.  The user is
-advised to modify the script to test further.
 
 =head1 SUBROUTINES/METHODS
 
