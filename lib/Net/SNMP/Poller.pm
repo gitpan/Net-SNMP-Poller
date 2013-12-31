@@ -12,11 +12,11 @@ Net::SNMP::Poller - Simple poller for non-blocking SNMP queries
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 =head1 SYNOPSIS
@@ -58,9 +58,7 @@ queries then returns the results.
 
 =head2 new
 
-    Description: The constructor
-    Arguments: Optional hashref for options
-    Returns: Object
+    The constructor
 
 =cut
 
@@ -78,9 +76,7 @@ sub new {
 
 =head2 init
 
-    Description: Validates args and initializes the object
-    Arguments: none
-    Returns: none, but can croak on errors
+    Validates args and initializes the object
 
 =cut
 
@@ -126,9 +122,7 @@ sub init {
 
 =head2 run
 
-    Description: Performs non-blocking snmp queries and return a data structure
-    Arguments: hashref of hostname => key-value pairs of session / request info
-    Returns: data structure host -> OID -> value.
+    Performs non-blocking snmp queries and return a data structure
 
 =cut
 
@@ -188,9 +182,7 @@ sub run {
 
 =head2 callback
 
-    Description: Callback method for Net::SNMP to invoke.
-    Arguments: Net::SNMP object (implicitly passed in via the module)
-    Returns: None, but populates $self->{ data } for run() to return
+    Callback method for Net::SNMP to invoke.
 
 =cut
 
@@ -258,7 +250,7 @@ L<http://search.cpan.org/dist/Net-SNMP-Poller/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012 Satoshi Yagi.
+Copyright 2012-2013 Satoshi Yagi.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
