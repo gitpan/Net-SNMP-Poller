@@ -1,5 +1,11 @@
 Revision history for Net-SNMP-Poller
 
+0.05    2013/12/31
+        Bumping up version
+
+0.04    2013/12/31
+        Updating comments
+
 0.03    2013/1/31
         Practicing writing unit test with mocked methods
 
